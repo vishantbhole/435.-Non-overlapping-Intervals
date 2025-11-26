@@ -17,3 +17,8 @@ class Solution:
                 lastEnd = min(end, lastEnd)
 
         return count
+
+if __name__ == "__main__":
+    sol = Solution()
+    intervals = [[1,2],[2,3],[3,4],[1,3]]
+    print("Output is : ", sol.eraseOverlapIntervals(intervals))
