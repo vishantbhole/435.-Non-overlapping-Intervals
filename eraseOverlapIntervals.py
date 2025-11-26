@@ -12,3 +12,8 @@ class Solution:
          for start, end in intervals[1:]:
             if start >= lastEnd:
                 lastEnd = end
+            else:
+                count += 1
+                lastEnd = min(end, lastEnd)
+
+        return count
